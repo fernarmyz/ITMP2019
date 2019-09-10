@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form onsubmit="return register()">
+
+		<h2>ลงทะเบียนร่วมงาน</h2>
+		<!-- <input type="text" class="info" placeholder="รหัสนักศึกษา" required> -->
+		<input type="text" class="info" name="nickname" placeholder="ชื่อ" required>
+		<!-- <input type="text" class="info" placeholder="นามสกุล" required> -->
+		<button>ลงทะเบียน</button>
+	</form>
+
+<br><hr><br>
+<table>
+	<thead>
+		<th>ลำดับที่</th>
+		<th>รหัสนักศึกษา</th>
+		<!-- <th>ชื่อ</th>
+		<th>นามสกุล</th> -->
+	</thead>
+	<tbody id="registerList">
+		<tr></tr>
+	</tbody>
+</table>
+
+<script type="text/javascript">
+	var i = 1;
+	function register() {
+		// var info = document.getElementByclassName("Info");
+		// var people = document.createElement("TR");
+		// var registerList = document.getElementById("registerList");
+		// registerList.appendChild(people);
+		// people.innerHTML = <>
+		people = document.createElement("tr");
+		people.innerHTML = `
+			<td>${i}</td>
+			<td>${document.getElementByclassName("Info")}</td>
+			`;
+		registerList.appendChild(people);
+		document.querySelector('.info').value = "";
+		return false;
+
+		// var idTextInput = document.getElementById("idTextInput");
+		// var studentId = idTextInput.value;
+		// var tem = document.createElement("li");
+	 //    tem.setAttribute=("id", "studentId");
+		// tem.innerHTML = studentId;
+	}
+		//var mm=document.getElementById("songName");
+</script>
+</body>
+</html>
