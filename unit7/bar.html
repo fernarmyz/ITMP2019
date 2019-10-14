@@ -106,7 +106,6 @@
 			console.log(bodyR);
 		}
 		window.addEventListener("scroll", onScroll);
-
 		function ppp(){
 			let ppR = paragraph.getBoundingClientRect();
 			console.log(ppR);
@@ -123,7 +122,6 @@
 			}
 		}
 		window.addEventListener("scroll", ppp);
-
 		function chartScroll() {
 			let chart = document.getElementsByClassName('chart');
 			let ppR = paragraph.getBoundingClientRect();
@@ -140,18 +138,14 @@
 			}		
 		}
 		window.addEventListener("scroll", chartScroll);
-
 		function topLine() {
 			let maxWidth = document.body.getBoundingClientRect().height - window.innerHeight;
 			let nowScroll = window.pageYOffset;
 			let topLine = Math.ceil((nowScroll * 100) / maxWidth);
-			// console.log(topLine);
-			// console.log(maxWidth);
 			document.getElementById('topLine').style.width = `${topLine}%`;
 		}
 		window.addEventListener("scroll", topLine);
 		
-
 		
 	</script>
 </body>
