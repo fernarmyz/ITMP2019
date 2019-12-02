@@ -1,122 +1,164 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style>
-	.yoyo{
-		width: 100px;
-		height: 100px;
-		position: fixed;
-		right: 1em;
-		bottom: 1em;
-		background: blue;
-	}
-	@keyframes blink{
-		from{opacity: 1}
-		to{opacity: 0.3}
-	}
-	.blink{
-		animation: blink .2s infinite;
-	}
-	#tooPla{
-		height: 600px;
-		background: navy;
-		position: relative;
-		overflow: hidden;
-	}
-	.fish{
-		position: absolute;
-		width: 100px;
-		transition: all .2s
-	}
-	.f1{
-		top: 450px;
-		left: 80px;
-		transform: scaleX(-1);
-	}
-	.f2{
-		top: 700px;
-		left: 480px;
-		transform: scaleX(-1);
-	}
-	.f3{
-		top: 540px;
-		left: 60px;
-		transform: scaleX(-1);
-	}
-	.f4{
-		top: 580px;
-		left: 200px;
-		transform: scaleX(-1);
-	}
-	.f5{
-		top: 400px;
-		left: 400px;
-		transform: scaleX(-1);
-	}
-</style>
-	<title>Hello Ocean World</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="https://jabont.com/jayss/jayss.css">
+	<title>My Ocean</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{
+			margin: 0;
+			overflow-x:hidden; 
+		}
+		.welcome{
+			width: 100%;
+			
+			color: white;
+			font-family: 'Roboto Slab', serif;
+			position: absolute;
+		}
+		h1{
+			font-size: 48px;
+			text-align: center;
+		}
+		p{
+			font-size: 26px;
+			text-align: center;
+		}
+		.level1{
+			height: 700px;
+			background: #00c4d8;
+		}
+		.level2{
+			height: 500px;
+			background: #00b3c5;
+		}
+		.level3{
+			height: 250px;
+			background: #00a4b5;
+		}
+		.level4{
+			height: 100px;
+			background: #008896;
+		}
+		.fish{
+			position: absolute;
+			width: 50px;
+			transition: all .2s;
+		}
+		.f1{
+			top: 500px;
+			left: -50px;
+		}
+		.f2{
+			top: 620px;
+			left: -50px;
+		}
+		.f3{
+			top: 700px;
+			left: -50px;
+		}
+		.f4{
+			top: 790px;
+			left: -50px;
+		}
+		.f5{
+			top: 830px;
+			right: 1px;
+			transform: scaleX(-1);
+		}
+		.f6{
+			top: 900px;
+			right: 1px;
+			transform: scaleX(-1);
+		}
+		.f7{
+			top: 960px;
+			left: -50px;
+		}
+		.f8{
+			top: 1000px;
+			left: -50px;
+		}
+		.f9{
+			top: 1300px;
+			right: 1px;
+			transform: scaleX(-1);
+		}
+		.f10{
+			top: 1430px;
+			right: 1px;
+			transform: scaleX(-1);
+		}
+		.f11{
+			top: 1500px;
+			right: 1px;
+			transform: scaleX(-1);
+		}
+		.f12{
+			top: 1600px;
+			right: 1px;
+			transform: scaleX(-1);
+		}
+		#tooPla{
+			overflow-x: hidden;
+
+		}
+	</style>
 </head>
 <body>
-
-	<div id="d1" style="height: 400px;width: 100%;background: pink"></div>
-	<div id="d2" style="height: 400px;width: 100%;background: orchid"></div>
-	<div id="d3" style="height: 400px;width: 100%;background: pink"></div>
-	<div id="d4" style="height: 400px;width: 100%;background: orchid"></div>
-	<div id="d5" style="height: 400px;width: 100%;background: pink"></div>
-	<div id="d6" style="height: 400px;width: 100%;background: orchid"></div>
-	<div id="d7" style="height: 400px;width: 100%;background: pink"></div>
-	<div id="d8" style="height: 400px;width: 100%;background: orchid"></div>
-		<div id="tooPla">
-		<img src="fish.png" class="fish f1" id="f1">
-		<img src="fish.png" class="fish f2" id="f2">
-		<img src="fish.png" class="fish f3" id="f3">
-		<img src="fish.png" class="fish f4" id="f4">
-		<img src="fish.png" class="fish f5" id="f5">
+	<div class="welcome">
+		<h1>Welcome to My Ocean World</h1>
+		<p>Please Scroll down</p>
 	</div>
-	<div id="d9" style="height: 400px;width: 100%;background: pink"></div>
-	<div id="d10" style="height: 400px;width: 100%;background: orchid"></div>
-	<div id="d11" style="height: 400px;width: 100%;background: pink"></div>
-	<div id="d12" style="height: 400px;width: 100%;background: orchid"></div>
-	<div id="d13" style="height: 400px;width: 100%;background: pink"></div>
-	<div id="d14" style="height: 400px;width: 100%;background: orchid"></div>
-	<div id="d15" style="height: 400px;width: 100%;background: pink"></div>
-	<div id="d16" style="height: 400px;width: 100%;background: orchid"></div>
-	<div id="yoyo" class="yoyo"></div>
+	<div id="tooPla">
+		<img class="fish f1" id="f1" src="https://img.icons8.com/doodle/48/000000/flounder-fish.png">
+		<img class="fish f2" id="f2" src="https://img.icons8.com/plasticine/100/000000/fish.png">
+		<img class="fish f3" id="f3" src="https://img.icons8.com/officel/40/000000/clown-fish.png">
+		<img class="fish f4" id="f4" src="https://img.icons8.com/office/40/000000/seahorse.png">
+		<img class="fish f5" id="f5" src="https://img.icons8.com/doodle/48/000000/flounder-fish.png">
+		<img class="fish f6" id="f6" src="https://img.icons8.com/plasticine/100/000000/fish.png">
+		<img class="fish f7" id="f7" src="https://img.icons8.com/officel/40/000000/clown-fish.png">
+		<img class="fish f8" id="f8" src="https://img.icons8.com/office/40/000000/seahorse.png">
+		<img class="fish f9" id="f9" src="https://img.icons8.com/doodle/48/000000/flounder-fish.png">
+		<img class="fish f10" id="f10" src="https://img.icons8.com/doodle/48/000000/flounder-fish.png">
+		<img class="fish f11" id="f11" src="https://img.icons8.com/officel/40/000000/clown-fish.png">
+		<img class="fish f12" id="f12" src="https://img.icons8.com/officel/40/000000/clown-fish.png">
+	</div>
+	
 
+	<div class="level1"></div>
+	<div class="level2"></div>
+	<div class="level3"></div>
+	<div class="level4"></div>
+<script type="text/javascript">
+	function plaToo(){
+		let y = window.pageYOffset-tooPla.offsetTop+tooPla.offsetHeight;
+		f1.style.marginLeft = `${y}px`;
+		f2.style.marginLeft = `${y*1.3}px`;
+		f3.style.marginLeft = `${y*2}px`;
+		f4.style.marginLeft = `${y*1.5}px`;
+		f5.style.marginRight = `${y}px`;
+		f6.style.marginRight = `${y*1.3}px`;
+		f7.style.marginLeft = `${y*2}px`;
+		f8.style.marginLeft = `${y*1.5}px`;
+		f9.style.marginRight = `${y}px`;
+		f10.style.marginRight = `${y*1.3}px`;
+		f11.style.marginRight = `${y*1.2}px`;
+		f12.style.marginRight = `${y*1.5}px`;
 
-
-	<script type="text/javascript">
-		function rotateNongYoyo(){
-			let r = window.pageYOffset;
-			yoyo.style.transform = `rotate(${r}deg)`;
-		}
-		window.addEventListener("scroll", rotateNongYoyo);
-		function blinkThat(){
-			let ey = d3.offsetTop;
-			let ebottom = ey+d3.offsetHeight; 
-			let nowTop = window.pageYOffset;
-			let nowBottom = nowTop+window.innerHeight;
-			if (nowBottom>ey+300 && nowTop<ebottom-100) {
-				d3.classList.add('blink');
-			}
-			else{
-				d3.classList.remove('blink');
-			}
-		}
-		window.addEventListener("scroll", blinkThat);
-
-		function plaToo(){
-			let y = window.pageYOffset-tooPla.offsetTop+tooPla.offsetHeight;
-			console.log(y);
-			f1.style.marginTop = `-${y}px`;
-			f2.style.marginTop = `-${y*3}px`;
-			f3.style.marginTop = `-${y*2}px`;
-			f4.style.marginTop = `-${y*1.5}px`;
-			f5.style.marginTop = `-${y*0.7}px`;
-		}
-		window.addEventListener("scroll", plaToo);
-	</script>
+		f1.style.marginTop = `-${y}px`;
+		f2.style.marginTop = `-${y*0.8}px`;
+		f3.style.marginTop = `-${y*2}px`;
+		f4.style.marginTop = `-${y*1}px`;
+		f5.style.marginTop = `-${y}px`;
+		f6.style.marginTop = `-${y*0.8}px`;
+		f7.style.marginTop = `-${y*0.5}px`;
+		f8.style.marginTop = `-${y*1}px`;
+		f9.style.marginTop = `-${y}px`;
+		f10.style.marginTop = `-${y*0.8}px`;
+		f11.style.marginTop = `-${y*0.5}px`;
+		f12.style.marginTop = `-${y*1}px`;
+	}
+	window.addEventListener("scroll", plaToo);
+</script>
 </body>
 </html>
